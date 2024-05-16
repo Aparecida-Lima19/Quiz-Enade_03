@@ -1,13 +1,21 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
-input:{
-    width: "90%"
-    backgroundColor: "#DCDCDC"
-    heigth:40
-    margin:12
-    paddingLeft: 10
-}
-label:{
-    fontesize: 10
-    
-}
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#00FFFF',
+    },
+    input: {
+        width: "90%",
+        backgroundColor: "#DCDCDC",
+        height: 40,
+        margin: 12,
+        paddingLeft: 10,
+    },
+    label: {
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+});
+
+export default styles;
