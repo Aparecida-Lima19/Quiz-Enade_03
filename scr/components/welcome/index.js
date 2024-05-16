@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     title: {
         color: '#FFFFFF',
         fontSize: 35,
-        fontFamily: 'Roboto, ',
+        
         fontWeight: 'bold'
     },
 
