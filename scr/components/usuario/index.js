@@ -20,9 +20,11 @@ export default function Usuário() {
                 placeholder="ex: Lívia Maria"
             /> 
             <Button
+            style ={styles.button}
                 title="Enviar"
                 onPress={handlePress}
-                color="#1782AF" // Ajuste a cor do botão conforme necessário
+                color="00000" 
+                
             />
             
         </LinearGradient>

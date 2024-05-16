@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
@@ -23,6 +23,27 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
     },
+    Button:{
+        position :'absolute',
+    width: '80%',
+    height: 40,
+    borderWidth: 8,
+    borderRadius: 30,
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    backgroundColor: '##0FB1CD',
+    shadowOffset: {
+        width: 0,
+        height: 4,
+      },
+      shadowOpacity: 0.5,
+      shadowRadius: 4,
+      elevation: 4,
+},
+
+
+    
+    
 });
 
 export default styles;
