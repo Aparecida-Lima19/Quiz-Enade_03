@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 
+import{ useNavigation} from '@react-navigation/native'
+
 export default function Welcome() {
 
     // Definindo o estado para armazenar o tamanho da imagem
@@ -14,6 +16,9 @@ export default function Welcome() {
         }));
     };
 
+    //Definindo a navegação de telas
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
             <View style={styles.containerTitle}>
@@ -26,7 +31,10 @@ export default function Welcome() {
                     style={[styles.image, { width: size.width, height: size.height }]}
                 />
 
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity 
+                style={styles.button}
+                onPress={ () => navigation.navigate('Usuario')}
+                >
                     <Text style={styles.buttonText}>Acessar</Text>
                 </TouchableOpacity>
             </View>
