@@ -61,40 +61,55 @@ const styles = StyleSheet.create({
     containerLogo: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: '10%',
+        paddingBottom: '15%',
     },
 
     //Estilização do text do titulo...
     title: {
         color: '#FFFFFF',
         fontSize: 35,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        paddingTop: '60%',
     },
 
     //Estilização da logo...
     image: {
         resizeMode: 'contain',
-        margin: '5%',
+        
     },
 
     //Estilização do button de acesso...
     button: {
         position: 'absolute',
-        backgroundColor: '#007BFF',
-        borderRadius: 50,
+        backgroundColor: '#0FB1CD',
+        borderRadius: 30,
         paddingVertical: 8,
+        margin: '20%',
         width: '30%',
         alignSelf: 'center',
         bottom: '15%',
         justifyContent: 'center',
-        alignItems: 'center'
-
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 4,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 4,
+        elevation: 4,
     },
 
     //Estilização do text do button...
     buttonText: {
         color: '#FFFFFF',
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: 'bold',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
+        
     }
 });
