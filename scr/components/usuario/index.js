@@ -1,11 +1,17 @@
-import React from "react";
-import { View, Text } from "react-native"
+import React  from "react";
+import { View, Text, TextInput, Button } from "react-native";
+import styles from "./style";
 
-export default function Usuario(){
-    return(
+export default function Usuário() {
+    
+
+    return (
         <View>
-            <Text>oiiiiiii</Text>
-            
+            <Text style={styles.label}>Usuário:</Text>
+            <TextInput
+                style={[styles.input, { textAlign: 'center' }]} 
+                placeholder="ex: Lívia Maria"
+            /> 
         </View>
     );
 }
