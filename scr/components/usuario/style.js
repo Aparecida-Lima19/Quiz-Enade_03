@@ -3,19 +3,27 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#00FFFF',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    innerContainer: {
+        width: "80%",
+        alignItems: 'center',
     },
     input: {
-        width: "90%",
+        width: "70%",
         backgroundColor: "#DCDCDC",
-        height: 40,
-        margin: 12,
+        height: 35,
+        marginVertical: 15,
         paddingLeft: 10,
+        borderRadius: 20,
     },
     label: {
         fontSize: 16,
         fontWeight: 'bold',
+        marginBottom: 10,
     },
 });
 
 export default styles;
+

@@ -4,6 +4,9 @@ import Welcome from '../components/welcome';
 import Usuario from '../components/usuario';
 
 
+
+
+
 const Stack = createNativeStackNavigator();
 
 export default function Routes(){
