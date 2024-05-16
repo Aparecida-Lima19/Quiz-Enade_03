@@ -6,7 +6,7 @@ export default function Usuário() {
     
 
     return (
-        <View>
+        <View style={styles.container}>
             <Text style={styles.label}>Usuário:</Text>
             <TextInput
                 style={[styles.input, { textAlign: 'center' }]} 
