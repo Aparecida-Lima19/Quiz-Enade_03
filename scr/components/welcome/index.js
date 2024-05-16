@@ -43,59 +43,59 @@ export default function Welcome() {
 }
 
 
-//Função para definir o container
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#00FFFF',
-    },
+    //Função para definir o container
+    const styles = StyleSheet.create({
+        container: {
+            flex: 1,
+            backgroundColor: '#00FFFF',
+        },
 
-    //Estilização para o container do titulo...
-    containerTitle: {
-        flex: 3,
+        //Estilização para o container do titulo...
+        containerTitle: {
+            flex: 3,
 
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
+            justifyContent: 'center',
+            alignItems: 'center'
+        },
 
-    //Estilização para o container do Logo...
-    containerLogo: {
-        flex: 1,  
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
+        //Estilização para o container do Logo...
+        containerLogo: {
+            flex: 1,  
+            justifyContent: 'center',
+            alignItems: 'center'
+        },
 
-    //Estilização do text do titulo...
-    title: {
-        color: '#FFFFFF',
-        fontSize: 35,
+        //Estilização do text do titulo...
+        title: {
+            color: '#FFFFFF',
+            fontSize: 35,
+            
+            fontWeight: 'bold'
+        },
+
+        //Estilização da logo...
+        image: {
+            resizeMode: 'contain',
+        },
+
+        //Estilização do button de acesso...
+        button: {
+            position: 'absolute',
+            backgroundColor: '#007BFF',
+            borderRadius: 50,
+            paddingVertical: 8,
+            width: '30%',
+            alignSelf: 'center',
+            bottom:'15%',
+            justifyContent: 'center',
+            alignItems: 'center'
+            
+        },
         
-        fontWeight: 'bold'
-    },
-
-    //Estilização da logo...
-    image: {
-        resizeMode: 'contain',
-    },
-
-    //Estilização do button de acesso...
-    button: {
-        position: 'absolute',
-        backgroundColor: '#007BFF',
-        borderRadius: 50,
-        paddingVertical: 8,
-        width: '30%',
-        alignSelf: 'center',
-        bottom:'15%',
-        justifyContent: 'center',
-        alignItems: 'center'
-        
-    },
-    
-    //Estilização do text do button...
-    buttonText: {
-        color: '#FFFFFF',
-        fontSize: 16,
-        fontWeight: 'bold',
-    }
-});
+        //Estilização do text do button...
+        buttonText: {
+            color: '#FFFFFF',
+            fontSize: 16,
+            fontWeight: 'bold',
+        }
+    });
