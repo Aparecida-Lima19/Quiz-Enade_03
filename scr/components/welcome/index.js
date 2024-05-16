@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     //Estilização da logo...
     image: {
         resizeMode: 'contain',
+        margin: '5%',
     },
 
     //Estilização do button de acesso...
