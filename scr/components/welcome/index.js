@@ -37,9 +37,13 @@ export default function Welcome() {
         <LinearGradient
             colors={['#00EFFF', '#00E0FF', '#174BAF']}
             style={styles.container}
+            
         >
+
+            
             <View style={styles.containerTitle}>
                 <Text style={styles.title}>Enade</Text>
+                <Text style={styles.subtitle}>SIMULADO</Text>
             </View>
 
             <View style={styles.containerLogo}>
@@ -58,6 +62,7 @@ export default function Welcome() {
     );
 }
 
+
 //Função para definir o container
 const styles = StyleSheet.create({
     container: {
@@ -71,26 +76,47 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
 
+    
+
     //Estilização para o container do Logo...
     containerLogo: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+       
+        
+        
     },
 
     //Estilização do text do titulo...
     title: {
         color: '#FFFFFF',
-        fontSize: 50,
+        fontSize: 90,
         fontFamily: 'FasterOne_400Regular',
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
     },
 
+    subTitle:{
+        color: '#FFFFFF',
+        fontSize: 50,
+        fontWeight: 'bold',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
+    },
+
+    
+
     //Estilização da logo...
     image: {
         resizeMode: 'contain',
+        marginTop : '-135%',
+        
+        
+        
+        
         
     },
 
@@ -100,7 +126,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#054BFF',
         borderRadius: 30,
         paddingVertical: 8,
-        margin: '20%',
+        margin: '10%',
         width: '30%',
         alignSelf: 'center',
         bottom: '70%',

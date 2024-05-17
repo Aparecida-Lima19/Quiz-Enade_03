@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#FFF",
         borderColor: '#CCCCCC',
         borderWidth: 1,
-        height: '8%',
+        height: '10%',
         marginBottom:'15%',
         borderRadius: 10,
     },
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     picker:{
         width: '100%',
-        height: '8%',
+        height: '10%',
         backgroundColor:'#FFF',
     },
     label: {
