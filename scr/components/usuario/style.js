@@ -23,15 +23,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
     },
-    Button:{
-        position :'absolute',
-        width: '80%',
-        height: 40,
-        borderWidth: 8,
+    button:{
+        
+        backgroundColor: '#054BFF',
+        borderRadius: 30,
+        paddingVertical: 8,
+        width: '30%',
+        margin:'20%',
         borderRadius: 30,
         marginBottom: 20,
-        paddingHorizontal: 10,
-        backgroundColor: '##0FB1CD',
+        justifyContent: 'center',
+        alignItems: 'center',
         shadowOffset: {
             width: 0,
             height: 4,
@@ -44,6 +46,9 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 16,
         fontWeight: 'bold',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
     }
 
 

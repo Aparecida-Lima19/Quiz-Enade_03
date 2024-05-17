@@ -2,6 +2,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Welcome from '../components/welcome';
 import Usuario from '../components/usuario';
+import Perguntas from '../components/perguntas';
 
 
 

@@ -4,7 +4,6 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import styles from "./style";
-import Perguntas from "../perguntas";
 import { Picker } from '@react-native-picker/picker';
 
 const Stack = createStackNavigator();
@@ -19,11 +18,13 @@ export default function Usuario() {
     };
     const [selectedValue, setSelectedValue] = useState("");
     
+
       return (
         <LinearGradient
         colors={['#00EFFF', '#00E0FF', '#174BAF']}
         style={styles.container}
         >  
+            
             <View style={styles.innerContainer}>
                 <Text style={styles.label}>Usuário:</Text>
                 <TextInput
