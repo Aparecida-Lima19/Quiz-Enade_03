@@ -11,7 +11,7 @@ export default function Usuário() {
     
       return (
         <LinearGradient
-        colors={['#00FFFF', '#1782AF']}
+        colors={['#00EFFF', '#00E0FF', '#174BAF']}
         style={styles.container}
         >  
             <Text style={styles.label}>Usuário:</Text>

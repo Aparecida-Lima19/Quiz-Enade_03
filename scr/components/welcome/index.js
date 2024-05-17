@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function Welcome() {
     // Definindo o estado para armazenar o tamanho da imagem
-    const [size, setSize] = useState({ width: 100, height: 100 });
+    const [size, setSize] = useState({ width: 70, height: 70 });
 
     //Definindo a navegação de telas
     const navigation = useNavigation();
@@ -20,7 +20,7 @@ export default function Welcome() {
 
     return (
         <LinearGradient
-            colors={['#00FFFF', '#1782AF']}
+            colors={['#00EFFF', '#00E0FF', '#174BAF']}
             style={styles.container}
         >
             <View style={styles.containerTitle}>
@@ -28,17 +28,16 @@ export default function Welcome() {
             </View>
 
             <View style={styles.containerLogo}>
-                <Image
-                    source={require('../../components/assets/Logo.png')}
-                    style={[styles.image, { width: size.width, height: size.height }]}
-                />
-
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => navigation.navigate('Usuario')}
                 >
                     <Text style={styles.buttonText}>Acessar</Text>
                 </TouchableOpacity>
+                <Image
+                    source={require('../../components/assets/Logo.png')}
+                    style={[styles.image, { width: size.width, height: size.height }]}
+                />                
             </View>
         </LinearGradient>
     );
@@ -62,8 +61,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '10%',
-        paddingBottom: '15%',
     },
 
     //Estilização do text do titulo...
@@ -71,7 +68,10 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontSize: 35,
         fontWeight: 'bold',
-        paddingTop: '60%',
+        paddingTop: '15%',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
     },
 
     //Estilização da logo...
@@ -83,13 +83,13 @@ const styles = StyleSheet.create({
     //Estilização do button de acesso...
     button: {
         position: 'absolute',
-        backgroundColor: '#0FB1CD',
+        backgroundColor: '#054BFF',
         borderRadius: 30,
         paddingVertical: 8,
         margin: '20%',
         width: '30%',
         alignSelf: 'center',
-        bottom: '15%',
+        bottom: '70%',
         justifyContent: 'center',
         alignItems: 'center',
         shadowColor: '#000',
