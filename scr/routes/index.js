@@ -7,6 +7,7 @@ import Usuario from '../components/usuario';
 
 
 
+
 const Stack = createNativeStackNavigator();
 
 export default function Routes(){
