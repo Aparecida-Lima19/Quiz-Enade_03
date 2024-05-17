@@ -6,32 +6,65 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    innerContainer: {
-        width: "80%",
+    topo:{
+        flex:1,
+        justifyContent: 'center',
         alignItems: 'center',
+        width: "80%",
+    },
+    topoTitle: {
+        color: '#FFFFFF',
+        fontSize: 50,
+        fontFamily: 'FasterOne_400Regular',
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
+    },
+    innerContainer: {
+        flex: 2,
+        width: "80%",
+        justifyContent: 'center',
+        
     },
     input: {
-        width: "70%",
-        backgroundColor: "#DCDCDC",
-        height: 35,
-        marginVertical: 15,
-        paddingLeft: 10,
-        borderRadius: 20,
+        width: "100%",
+        backgroundColor: "#FFF",
+        borderColor: '#CCCCCC',
+        borderWidth: 1,
+        height: '8%',
+        marginBottom:'15%',
+        borderRadius: 10,
+    },
+    pickerContainer: {
+        borderWidth: 1, 
+        borderRadius: 10, 
+        borderColor: '#CCCCCC', 
+        overflow: 'hidden', 
+        
+    },
+    picker:{
+        width: '100%',
+        height: '8%',
+        backgroundColor:'#FFF',
     },
     label: {
+        jjustifyContent: 'center',
         fontSize: 16,
         fontWeight: 'bold',
         marginBottom: 10,
+        marginLeft:'5%',
     },
     button:{
         
         backgroundColor: '#054BFF',
+        borderColor: '#CCCCCC',
         borderRadius: 30,
-        paddingVertical: 8,
-        width: '30%',
-        margin:'20%',
+        borderWidth: 1,
+        paddingVertical: 10,
+        marginTop:'20%',
+        marginLeft:'30%',
+        width: '40%',
         borderRadius: 30,
-        marginBottom: 20,
         justifyContent: 'center',
         alignItems: 'center',
         shadowOffset: {
@@ -41,6 +74,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 4,
         elevation: 4,
+
     },
     buttonText: {
         color: '#fff',
@@ -49,11 +83,7 @@ const styles = StyleSheet.create({
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
-    }
-
-
-    
-    
+    }    
 });
 
 export default styles;
