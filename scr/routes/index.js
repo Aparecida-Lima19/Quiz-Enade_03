@@ -2,7 +2,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Welcome from '../components/welcome';
 import Usuario from '../components/usuario';
-import Perguntas from '../components/perguntas';
+import Acesso from '../components/acesso';
 
 
 
@@ -25,8 +25,8 @@ export default function Routes(){
                 options={{headerShown: false}}
             />
             <Stack.Screen
-                name = "Perguntas"
-                component={Perguntas}
+                name = "Acesso"
+                component={Acesso}
                 options={{headerShown: false}}
             />
         </Stack.Navigator>

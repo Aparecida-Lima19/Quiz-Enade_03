@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import styles from "./style";
 import { Picker } from '@react-native-picker/picker';
 
+
 const Stack = createStackNavigator();
 
 export default function Usuario() {
@@ -14,7 +15,7 @@ export default function Usuario() {
 
     const handlePress = () => {
         console.log(username);
-        navigation.navigate('Perguntas'); 
+        navigation.navigate('Acesso'); 
     };
     const [selectedValue, setSelectedValue] = useState("");
     
