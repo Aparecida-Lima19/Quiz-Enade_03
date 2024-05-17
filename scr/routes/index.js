@@ -23,6 +23,11 @@ export default function Routes(){
                 component={Usuario}
                 options={{headerShown: false}}
             />
+            <Stack.Screen
+                name = "Perguntas"
+                component={Perguntas}
+                options={{headerShown: false}}
+            />
         </Stack.Navigator>
     );
 }

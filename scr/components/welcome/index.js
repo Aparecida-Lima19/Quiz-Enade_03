@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
+import * as SplashScreen from 'expo-splash-screen'; 
+import { useFonts, FasterOne_400Regular } from '@expo-google-fonts/faster-one'; // Importar a fonte do Google
 
 export default function Welcome() {
     // Definindo o estado para armazenar o tamanho da imagem
@@ -17,7 +19,20 @@ export default function Welcome() {
             height: prevSize.height + 50
         }));
     };
+    // Carregando a fonte
+    let [fontsLoaded] = useFonts({
+        FasterOne_400Regular,
+    });
 
+    useEffect(() => {
+        if (fontsLoaded) {
+            SplashScreen.hideAsync(); // Oculta a splash screen quando as fontes são carregadas
+        }
+    }, [fontsLoaded]);
+
+    if (!fontsLoaded) {
+        return null; // Retorna null até que as fontes sejam carregadas
+    }
     return (
         <LinearGradient
             colors={['#00EFFF', '#00E0FF', '#174BAF']}
@@ -66,9 +81,8 @@ const styles = StyleSheet.create({
     //Estilização do text do titulo...
     title: {
         color: '#FFFFFF',
-        fontSize: 35,
-        fontWeight: 'bold',
-        paddingTop: '15%',
+        fontSize: 50,
+        fontFamily: 'FasterOne_400Regular',
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
