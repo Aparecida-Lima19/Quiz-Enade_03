@@ -9,7 +9,7 @@ import { useFonts, FasterOne_400Regular } from '@expo-google-fonts/faster-one'; 
 export default function Welcome() {
     // Definindo o estado para armazenar o tamanho da imagem
     const [size, setSize] = useState({ width: '20%', height: '30%' });
-    const [aluno, setAluno] = useState({ width: '100%', height: '100%' });
+    const [aluno, setAluno] = useState({ width: '110%', height: '100%' });
 
     //Definindo a navegação de telas
     const navigation = useNavigation();
@@ -49,7 +49,7 @@ export default function Welcome() {
                 <View style={styles.containerLogo}>
                     <Image 
                         style={[styles.imgAluno, { width: aluno.width, height: aluno.height }]}
-                        source={require('../../components/assets/Alunos.png')}
+                        source={require('../../components/assets/Alunos01.png')}
                     />                               
                 </View>
             </LinearGradient>

@@ -45,9 +45,10 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
     },
     imgAluno:{
-        width: '100%',
+        width: '110%',
         height: '100%',
-        opacity: 0.3,
+        opacity: 0.4,
+        marginBottom:'0%',
     },
 });
 export default styles;

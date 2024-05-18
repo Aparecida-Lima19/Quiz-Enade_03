@@ -9,7 +9,7 @@ export default function Usuario() {
     const [username, setUsername] = useState('');
     const [selectedValue, setSelectedValue] = useState("");
     const navigation = useNavigation();
-
+    const [aluno, setAluno] = useState({ width: '1%', height: '1%' });
     const handlePress = () => {
         if (!username || !selectedValue) {
             Alert.alert("Erro", "Por favor, preencha todos os campos obrigatórios.");
@@ -78,7 +78,7 @@ export default function Usuario() {
                     <View style={styles.backgroundContainer}>
                         <Image
                             style={styles.imgAluno}
-                            source={require('../../components/assets/Alunos.png')}
+                            source={require('../../components/assets/Alunos02.png')}
                         />
                     </View>
                 </LinearGradient>

@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         zIndex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+
     },
     overlayContainer: {
         flex: 1,
@@ -43,11 +44,12 @@ const styles = StyleSheet.create({
         textShadowRadius: 2,
     },
     innerContainer: {
-        flex: 3,
+        flex: 1,
         width: "100%",
         alignItems: 'center',
         paddingHorizontal: '10%',
         justifyContent: 'center',
+
     },
     input: {
         width: "80%",
@@ -55,7 +57,7 @@ const styles = StyleSheet.create({
         borderColor: '#CCCCCC',
         borderWidth: 1,
         height: 50,
-        marginBottom: 15,
+        marginBottom: '15%',
         borderRadius: 30,
         paddingHorizontal: 15,
     },
@@ -77,10 +79,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
         alignSelf: 'flex-start',
+        marginLeft:'15%',
     },
     imgAluno: {
+        marginTop:'22%',
         width: '100%',
-        height: '100%',
+        height: '90%',
         opacity: 0.3,
     },
     button: {
@@ -89,7 +93,8 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         borderWidth: 1,
         paddingVertical: 10,
-        width: '40%',
+        marginTop: '10%',
+        width: '30%',
         justifyContent: 'center',
         alignItems: 'center',
         shadowOffset: {
