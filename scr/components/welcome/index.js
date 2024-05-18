@@ -63,7 +63,12 @@ export default function Welcome() {
                     style={[styles.imgAluno, { width: aluno.width, height: aluno.height }]}
                     source={require('../../components/assets/Alunos.png')}
                 />  
-                
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => navigation.navigate('Usuario')}
+                >
+                    <Text style={styles.buttonText}>Acessar</Text>
+                </TouchableOpacity>
                              
             </View>
         </LinearGradient>
