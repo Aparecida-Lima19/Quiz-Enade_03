@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         flex:1,
         justifyContent: 'center',
         alignItems: 'center',
-        width: "80%",
+        width: "100%",
     },
     topoTitle: {
         color: '#FFFFFF',
@@ -20,39 +20,54 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
     },
+    subTitle:{
+        color: '#FFF',
+        fontSize: 20,
+        fontWeight: 'bold',
+        textShadowColor: 'rgba(0, 0, 0, 0.8)',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
+    },
     innerContainer: {
         flex: 3,
-        width: "80%",
-       
-        
+        width: "100%",
+        alignItems: 'center'
     },
     input: {
-        width: "100%",
+        width: "80%",
         backgroundColor: "#FFF",
         borderColor: '#CCCCCC',
         borderWidth: 1,
         height: '10%',
         marginBottom:'15%',
         borderRadius: 30,
+        paddingHorizontal: 15,
     },
     pickerContainer: {
+        width: '80%',
+        height: '10%',
         borderWidth: 1, 
         borderRadius: 30, 
         borderColor: '#CCCCCC', 
-        overflow: 'hidden', 
+        overflow: 'hidden',
+        backgroundColor: '#FFF',
+        marginBottom: 15, 
         
     },
     picker:{
-        width: '100%',
-        height: '10%',
+        height:'100%',
         backgroundColor:'#FFF',
     },
     label: {
-        jjustifyContent: 'center',
+        justifyContent: 'center',
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 10,
         marginLeft:'5%',
+    },
+    imgAluno:{
+        opacity: 0.3,
+        marginTop: 15,
     },
     button:{
         
@@ -61,8 +76,7 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         borderWidth: 1,
         paddingVertical: 10,
-        marginTop:'10%',
-        marginLeft:'30%',
+
         width: '40%',
         borderRadius: 30,
         justifyContent: 'center',

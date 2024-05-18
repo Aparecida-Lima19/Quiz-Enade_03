@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import {View, Text, Image, TouchableOpacity } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import styles from "./style";
@@ -13,7 +13,7 @@ export default function Welcome() {
 
     //Definindo a navegação de telas
     const navigation = useNavigation();
-   
+
     // Carregando a fonte
     let [fontsLoaded] = useFonts({
         FasterOne_400Regular,
@@ -29,7 +29,7 @@ export default function Welcome() {
         return null;
     }
     return (
-        <TouchableOpacity style={{ flex: 1 }} onPress={() => navigation.navigate('Usuario')}>
+        <TouchableOpacity style={{ flex: 3 }} onPress={() => navigation.navigate('Usuario')}>
             <LinearGradient
                 colors={['#00EFFF', '#00E0FF', '#174BAF']}
                 style={styles.container}

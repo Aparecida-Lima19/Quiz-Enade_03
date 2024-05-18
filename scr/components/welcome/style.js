@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     //Estilização do text do titulo...
     title: {
         marginTop:'10%',
-        color: '#FFFFFF',
+        color: '#FFF',
         fontSize: 80,
         fontFamily: 'FasterOne_400Regular',
         textShadowColor: 'rgba(0, 0, 0, 0.8)',
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     },
 
     subTitle:{
-        color: '#FFFFFF',
+        color: '#FFF',
         fontSize: 20,
         fontWeight: 'bold',
         textShadowColor: 'rgba(0, 0, 0, 0.8)',
@@ -40,9 +40,13 @@ const styles = StyleSheet.create({
     },
     //Estilização da logo...
     image: {
-        resizeMode: 'contain', 
+        width: '30%',
+        height: '30%', 
+        resizeMode: 'contain',
     },
     imgAluno:{
+        width: '100%',
+        height: '100%',
         opacity: 0.3,
     },
 });
