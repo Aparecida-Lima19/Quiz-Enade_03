@@ -46,11 +46,21 @@ export default function Usuario() {
                         onValueChange={(itemValue, itemIndex) =>
                             setSelectedValue(itemValue)
                         }>
-                        <Picker.Item label="Java" value="java" />
-                        <Picker.Item label="JavaScript" value="js" />
-                        <Picker.Item label="Python" value="python" />
-                        <Picker.Item label="C++" value="cpp" />
-                        <Picker.Item label="Ruby" value="ruby" />
+                        <Picker.Item label="ADS" value="ADS" />
+                        <Picker.Item label="Biomedecina" value="Biomedicina" />
+                        <Picker.Item label="Direito" value="Direito" />
+                        <Picker.Item label="Educação Física" value="Educação Física" />
+                        <Picker.Item label="Enfermagem" value="Enfermagem" />
+                        <Picker.Item label="Engenharia Civil" value="Engenharia Civil" />
+                        <Picker.Item label="Farmácia" value="Farmácia" />
+                        <Picker.Item label="Fisioterapia" value="Fisioterapia" />
+                        <Picker.Item label="Fonoaudiologia" value="Fonoaudiologia" />
+                        <Picker.Item label="Nutrição" value="Nutrição" />
+                        <Picker.Item label="Odotonlogia" value="Odotonlogia" />
+                        <Picker.Item label="Pedagogia" value="Pedagogia" />
+                        <Picker.Item label="Medicina Veterinaria" value="Medicina Veterinaria" />
+                        <Picker.Item label="Terapia Ocupacional" value="Terapia Ocupacional" />
+
                     </Picker>
                 </View>
                 

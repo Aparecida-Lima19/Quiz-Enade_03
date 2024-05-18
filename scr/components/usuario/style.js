@@ -14,16 +14,16 @@ const styles = StyleSheet.create({
     },
     topoTitle: {
         color: '#FFFFFF',
-        fontSize: 50,
+        fontSize: 70,
         fontFamily: 'FasterOne_400Regular',
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
     },
     innerContainer: {
-        flex: 2,
+        flex: 3,
         width: "80%",
-        justifyContent: 'center',
+       
         
     },
     input: {
@@ -33,11 +33,11 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         height: '10%',
         marginBottom:'15%',
-        borderRadius: 10,
+        borderRadius: 30,
     },
     pickerContainer: {
         borderWidth: 1, 
-        borderRadius: 10, 
+        borderRadius: 30, 
         borderColor: '#CCCCCC', 
         overflow: 'hidden', 
         
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     },
     label: {
         jjustifyContent: 'center',
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 10,
         marginLeft:'5%',
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         borderWidth: 1,
         paddingVertical: 10,
-        marginTop:'20%',
+        marginTop:'10%',
         marginLeft:'30%',
         width: '40%',
         borderRadius: 30,
