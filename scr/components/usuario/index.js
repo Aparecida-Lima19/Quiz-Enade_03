@@ -76,10 +76,7 @@ export default function Usuario() {
                         </View>
                     </View>
                     <View style={styles.backgroundContainer}>
-                        <Image
-                            style={styles.imgAluno}
-                            source={require('../../components/assets/Alunos02.png')}
-                        />
+                       
                     </View>
                 </LinearGradient>
             </ScrollView>
