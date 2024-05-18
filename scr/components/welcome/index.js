@@ -7,7 +7,8 @@ import { useFonts, FasterOne_400Regular } from '@expo-google-fonts/faster-one'; 
 
 export default function Welcome() {
     // Definindo o estado para armazenar o tamanho da imagem
-    const [size, setSize] = useState({ width: 70, height: 70 });
+    const [size, setSize] = useState({ width: '40%', height: '40%' });
+    const [aluno, setAluno] = useState({ width: '100%', height: '100%' });
 
     //Definindo a navegação de telas
     const navigation = useNavigation();
@@ -17,6 +18,13 @@ export default function Welcome() {
         setSize(prevSize => ({
             width: prevSize.width + 50,
             height: prevSize.height + 50
+        }));
+    };
+
+    const increaseAluno = () => {
+        setAluno(prevAluno => ({
+            width: prevAluno.width + 50,
+            height: prevAluno.height + 50
         }));
     };
     // Carregando a fonte
@@ -39,24 +47,24 @@ export default function Welcome() {
             style={styles.container}
             
         >
-
+            
             
             <View style={styles.containerTitle}>
-                <Text style={styles.title}>Enade</Text>
-                <Text style={styles.subtitle}>SIMULADO</Text>
-            </View>
-
-            <View style={styles.containerLogo}>
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => navigation.navigate('Usuario')}
-                >
-                    <Text style={styles.buttonText}>Acessar</Text>
-                </TouchableOpacity>
                 <Image
                     source={require('../../components/assets/Logo.png')}
                     style={[styles.image, { width: size.width, height: size.height }]}
-                />                
+                /> 
+                <Text style={styles.title}>Enade</Text>
+                <Text style={styles.subTitle}>SIMULADO - 2024</Text>
+            </View>
+
+            <View style={styles.containerLogo}>
+                <Image 
+                    style={[styles.imgAluno, { width: aluno.width, height: aluno.height }]}
+                    source={require('../../components/assets/Alunos.png')}
+                />  
+                
+                             
             </View>
         </LinearGradient>
     );
@@ -71,9 +79,10 @@ const styles = StyleSheet.create({
 
     //Estilização para o container do titulo...
     containerTitle: {
-        flex: 3,
+        flex: 2,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        //backgroundColor:'red',
     },
 
     
@@ -90,8 +99,9 @@ const styles = StyleSheet.create({
 
     //Estilização do text do titulo...
     title: {
+        marginTop:'10%',
         color: '#FFFFFF',
-        fontSize: 90,
+        fontSize: 80,
         fontFamily: 'FasterOne_400Regular',
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
@@ -100,7 +110,7 @@ const styles = StyleSheet.create({
 
     subTitle:{
         color: '#FFFFFF',
-        fontSize: 50,
+        fontSize: 20,
         fontWeight: 'bold',
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
@@ -111,13 +121,10 @@ const styles = StyleSheet.create({
 
     //Estilização da logo...
     image: {
-        resizeMode: 'contain',
-        marginTop : '-135%',
-        
-        
-        
-        
-        
+        resizeMode: 'contain', 
+    },
+    imgAluno:{
+        opacity: 0.3,
     },
 
     //Estilização do button de acesso...
@@ -126,10 +133,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#054BFF',
         borderRadius: 30,
         paddingVertical: 8,
-        margin: '10%',
         width: '30%',
         alignSelf: 'center',
-        bottom: '70%',
+        bottom: '25%',
         justifyContent: 'center',
         alignItems: 'center',
         shadowColor: '#000',
@@ -152,4 +158,5 @@ const styles = StyleSheet.create({
         textShadowRadius: 2,
         
     }
+
 });
