@@ -5,9 +5,23 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        position: 'relative',
     },
-    topo:{
-        flex:1,
+    backgroundContainer: {
+        ...StyleSheet.absoluteFillObject,
+        zIndex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    overlayContainer: {
+        flex: 1,
+        zIndex: 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+    },
+    topo: {
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         width: "100%",
@@ -20,7 +34,7 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
     },
-    subTitle:{
+    subTitle: {
         color: '#FFF',
         fontSize: 20,
         fontWeight: 'bold',
@@ -31,54 +45,51 @@ const styles = StyleSheet.create({
     innerContainer: {
         flex: 3,
         width: "100%",
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingHorizontal: '10%',
+        justifyContent: 'center',
     },
     input: {
         width: "80%",
         backgroundColor: "#FFF",
         borderColor: '#CCCCCC',
         borderWidth: 1,
-        height: '10%',
-        marginBottom:'15%',
+        height: 50,
+        marginBottom: 15,
         borderRadius: 30,
         paddingHorizontal: 15,
     },
     pickerContainer: {
         width: '80%',
-        height: '10%',
-        borderWidth: 1, 
-        borderRadius: 30, 
-        borderColor: '#CCCCCC', 
+        height: 50,
+        borderWidth: 1,
+        borderRadius: 30,
+        borderColor: '#CCCCCC',
         overflow: 'hidden',
         backgroundColor: '#FFF',
-        marginBottom: 15, 
-        
+        marginBottom: 15,
     },
-    picker:{
-        height:'100%',
-        backgroundColor:'#FFF',
+    picker: {
+        height: '100%',
     },
     label: {
-        justifyContent: 'center',
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 10,
-        marginLeft:'5%',
+        alignSelf: 'flex-start',
     },
-    imgAluno:{
+    imgAluno: {
+        width: '100%',
+        height: '100%',
         opacity: 0.3,
-        marginTop: 15,
     },
-    button:{
-        
+    button: {
         backgroundColor: '#054BFF',
         borderColor: '#CCCCCC',
         borderRadius: 30,
         borderWidth: 1,
         paddingVertical: 10,
-
         width: '40%',
-        borderRadius: 30,
         justifyContent: 'center',
         alignItems: 'center',
         shadowOffset: {
@@ -88,7 +99,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 4,
         elevation: 4,
-
     },
     buttonText: {
         color: '#fff',
@@ -97,8 +107,7 @@ const styles = StyleSheet.create({
         textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
-    }    
+    }
 });
 
 export default styles;
-
