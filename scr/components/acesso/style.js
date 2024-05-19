@@ -27,6 +27,28 @@ const styles = StyleSheet.create({
   textPergunta:{ 
     fontFamily: 'Roboto_400Regular',
   },
+  checkItens:{
+    marginBottom: 15,
+  },
+  containerCheck:{
+    backgroundColor: '#174BAF',
+        margin: '5%',
+        borderRadius: 5,
+        padding: 10,
+  },
+  option: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+  },
+  checkboxText: {
+      fontSize: 16,
+      color: 'white',
+  },
+  body: {
+    marginTop: 20,
+    alignItems: 'center',
+},
   buttonText: {
     fontSize: 16,
     fontWeight: 'bold',
