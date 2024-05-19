@@ -14,10 +14,18 @@ const styles = StyleSheet.create({
   },
   containerItens: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    //backgroundColor:'red',
+    backgroundColor:'#FFF',
     width:'100%',
+    borderTopRightRadius: 20,
+    borderTopLeftRadius: 20,
+    paddingStart:'5%',
+    paddingEnd: '5%',
+  },
+  textTop:{
+    fontFamily: 'Roboto_700Bold',
+  },
+  textPergunta:{ 
+    fontFamily: 'Roboto_400Regular',
   },
   buttonText: {
     fontSize: 16,
@@ -28,6 +36,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#2089DC',
     padding: 15,
     borderRadius: 5,
+    fontFamily: 'Roboto_700Bold',
   },
   });
   export default styles;
