@@ -13,19 +13,30 @@ const styles = StyleSheet.create({
     width:'100%',
   },
   containerItens: {
-    flex: 1,
+    flex: 1.5,
     backgroundColor:'#FFF',
     width:'100%',
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
     paddingStart:'5%',
     paddingEnd: '5%',
+    alignItems: 'center'
   },
   textTop:{
-    fontFamily: 'Roboto_700Bold',
+    color: '#FFFFFF',
+    fontSize: 50,
+    fontFamily: 'FasterOne_400Regular',
+    textShadowColor: 'rgba(0, 0, 0, 0.5)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 2,
+    marginBottom: '35%'
+    
   },
   textPergunta:{ 
     fontFamily: 'Roboto_400Regular',
+    fontSize:30,
+    marginTop: '20%'
+    
   },
   checkItens:{
     marginBottom: 15,
@@ -35,11 +46,14 @@ const styles = StyleSheet.create({
         margin: '5%',
         borderRadius: 5,
         padding: 10,
+        marginBottom: 10,
   },
   option: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
+    
+    
   },
   checkboxText: {
       fontSize: 16,

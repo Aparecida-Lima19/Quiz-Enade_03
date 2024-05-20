@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import * as SplashScreen from 'expo-splash-screen'; 
 import { useFonts, FasterOne_400Regular } from '@expo-google-fonts/faster-one';
 import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
+
 import CheckBox from './checkBox';
 import styles from './style';
 
@@ -18,17 +19,7 @@ export default function Acesso() {
 
     const [instruments, setInstruments] = useState([]);
 
-    const onLayoutRootView = useCallback(async () => {
-        if (fontsLoaded) {
-            await SplashScreen.hideAsync();
-        }
-    }, [fontsLoaded]);
-
-    useEffect(() => {
-        if (fontsLoaded) {
-            onLayoutRootView();
-        }
-    }, [fontsLoaded]);
+    
 
     if (!fontsLoaded) {
         return null;
@@ -43,15 +34,20 @@ export default function Acesso() {
                 colors={['#00EFFF', '#00E0FF', '#174BAF']}
                 style={styles.containerTopo}
             >
-                <Text style={styles.textTop}>Tela De Escolha de</Text>
+                <Text style={styles.textTop}>ENADE</Text>
             </LinearGradient>
             <View style={styles.containerItens}>
                 <Text style={styles.textPergunta}>Perguntas:</Text>
+                
                 <CheckBox 
                     options={[
                         { label: 'Gerais', value: 'Gerais' },
                         { label: 'Tecnicas', value: 'Tecnicas' }
+
+                      
                     ]}
+
+                    
                     checkedValues={instruments}
                     onChange={setInstruments}
                     style={styles.checkItens}
