@@ -39,7 +39,11 @@ const styles = StyleSheet.create({
     
   },
   checkItens:{
-    marginBottom: 15,
+    //backgroundColor: 'green',
+    width: '80%',
+    justifyContent:'center',
+    alignItems:'center',
+    marginTop: '15%'
   },
   containerCheck:{
     backgroundColor: '#174BAF',
@@ -60,19 +64,33 @@ const styles = StyleSheet.create({
       color: 'white',
   },
   body: {
-    marginTop: 20,
-    alignItems: 'center',
+    backgroundColor: '#054BFF',
+        borderColor: '#CCCCCC',
+        borderRadius: 30,
+        borderWidth: 1,
+        paddingVertical: 10,
+        width: '30%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 4,
+        elevation: 4,
 },
   buttonText: {
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 25,
     color: '#FFF',
+    fontFamily: 'Roboto_700Bold',
+    
   },
   playButton: {
-    backgroundColor: '#2089DC',
-    padding: 15,
+    //backgroundColor: '#2089DC',
+    padding: 1,
     borderRadius: 5,
-    fontFamily: 'Roboto_700Bold',
+    
   },
   });
   export default styles;
