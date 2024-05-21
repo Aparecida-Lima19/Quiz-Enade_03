@@ -67,6 +67,7 @@ export default function Usuario() {
                                     <Picker.Item label="Terapia Ocupacional" value="Terapia Ocupacional" />
                                 </Picker>
                             </View>
+                            
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={handlePress}
@@ -74,9 +75,6 @@ export default function Usuario() {
                                 <Text style={styles.buttonText}>Entrar</Text>
                             </TouchableOpacity>
                         </View>
-                    </View>
-                    <View style={styles.backgroundContainer}>
-                       
                     </View>
                 </LinearGradient>
             </ScrollView>

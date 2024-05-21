@@ -63,8 +63,9 @@ const styles = StyleSheet.create({
         color: "#6b7280",
     },
     activeText: {
-        color: "#374151",
+        color: "#FFF",
     },
 });
+
 
 export default CheckBox;

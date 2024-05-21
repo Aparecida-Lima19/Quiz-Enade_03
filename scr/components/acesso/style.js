@@ -46,11 +46,11 @@ const styles = StyleSheet.create({
     marginTop: '15%'
   },
   containerCheck:{
-    backgroundColor: '#174BAF',
-        margin: '5%',
-        borderRadius: 5,
-        padding: 10,
-        marginBottom: 10,
+    //backgroundColor: '#174BAF',
+        //margin: '5%',
+        //borderRadius: 5,
+        //padding: 10,
+        //marginBottom: 10,
   },
   option: {
     flexDirection: 'row',
@@ -59,10 +59,7 @@ const styles = StyleSheet.create({
     
     
   },
-  checkboxText: {
-      fontSize: 16,
-      color: 'white',
-  },
+  
   body: {
     backgroundColor: '#054BFF',
         borderColor: '#CCCCCC',
