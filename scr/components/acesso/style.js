@@ -30,7 +30,14 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
     marginBottom: '35%'
-    
+  
+  },
+
+  textSub: {
+
+  
+
+
   },
   textPergunta:{ 
     fontFamily: 'Roboto_400Regular',

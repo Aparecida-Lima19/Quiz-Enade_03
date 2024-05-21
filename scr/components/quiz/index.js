@@ -15,6 +15,13 @@ const questions = [
         options: ["H2O", "CO2", "O2", "H2O2"],
         correctOption: "H2O"
     },
+
+    {
+          question: "QUESTÃO 1 (ENADE 2011) Retrato de uma princesa desconhecida Para que ela tivesse um pescoço tão fino Para que os seus pulsos tivessem um quebrar de caule Para que os seus olhos fossem tão frontais e limpos Para que a sua espinha fosse tão direita E ela usasse a cabeça tão erguida Com uma tão simples claridade sobre a testa Foram necessárias sucessivas gerações de escravos De corpo dobrado e grossas mãos pacientes Servindo sucessivas gerações de príncipes Ainda um pouco toscos e grosseiros Ávidos cruéis e fraudulentos Foi um imenso desperdiçar de gente Para que ela fosse aquela perfeição Solitária exilada sem destino ANDRESEN, S. M. B. Dual. Lisboa: Caminho, 2004. p. 73. No poema, a autora sugere que",
+          options: ["A os príncipes e as princesas são naturalmente belos." ,                                                                                                                                      "B os príncipes generosos cultivavam a beleza da princesa." ,                                                                                                                                      "C a beleza da princesa é desperdiçada pela miscigenação racial." ,                                                                                                                                      "D o trabalho compulsório de escravos proporcionou privilégios aos príncipes." ,                                                                                                                                      "E o exílio e a solidão são os responsáveis pela manutenção do corpo esbelto da princesa"],
+          options: ["A os príncipes e as princesas são naturalmente belos." ,                                                                                                                                      "B os príncipes generosos cultivavam a beleza da princesa." ,                                                                                                                                      "C a beleza da princesa é desperdiçada pela miscigenação racial." ,                                                                                                                                      "D o trabalho compulsório de escravos proporcionou privilégios aos príncipes." ,                                                                                                                                      "E o exílio e a solidão são os responsáveis pela manutenção do corpo esbelto da princesa"],
+          correctOption: ""
+    },
     // Adicione mais perguntas conforme necessário
 ];
 

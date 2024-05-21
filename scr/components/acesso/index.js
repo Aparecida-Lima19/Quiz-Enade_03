@@ -45,6 +45,8 @@ export default function Acesso() {
                 style={styles.containerTopo}
             >
                 <Text style={styles.textTop}>ENADE</Text>
+                <Text style={styles.textSub}>EXAME NACIONAL DE DESEMPENHO DOS ESTUDANTES</Text>
+
             </LinearGradient>
             <View style={styles.containerItens}>
                 <Text style={styles.textPergunta}>Perguntas:</Text>

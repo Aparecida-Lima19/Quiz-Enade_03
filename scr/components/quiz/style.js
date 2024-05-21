@@ -12,24 +12,25 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     width: '100%',
+    
   },
   questionText: {
-    fontSize: 24,
-    color: '#FFF',
-    marginBottom: 20,
+    fontSize: 15,
+    color: '#000',
+    marginBottom: 50,
     textAlign: 'center',
   },
   optionButton: {
     padding: 10,
     backgroundColor: '#FFF',
-    borderRadius: 10,
+    borderRadius: 20,
     marginVertical: 5,
   },
   selectedOptionButton: {
     backgroundColor: '#4CAF50',
   },
   optionText: {
-    fontSize: 18,
+    fontSize: 15,
     color: '#000',
   },
   nextButton: {
