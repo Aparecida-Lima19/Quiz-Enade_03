@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Pressable } from 'react-native';
+import { View, Text, TouchableOpacity, Alert } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts, FasterOne_400Regular } from '@expo-google-fonts/faster-one';
 import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
-import { useNavigation } from '@react-navigation/native'; // Adicionado import para useNavigation
+import { useNavigation } from '@react-navigation/native';
+import axios from 'axios'; 
 import styles from './style';
 import CheckBox from './checkBox';
 
@@ -18,7 +19,7 @@ export default function Acesso() {
     });
 
     const [instruments, setInstruments] = useState([]);
-    const navigation = useNavigation(); // Adicionada a utilização do hook useNavigation
+    const navigation = useNavigation();
 
     useEffect(() => {
         if (fontsLoaded) {
@@ -30,9 +31,28 @@ export default function Acesso() {
         return null;
     }
 
-    const handleStartQuiz = () => {
-        // Navegar para a tela do quiz quando o botão PLAY for pressionado
-        navigation.navigate('Quiz');
+    const handleStartQuiz = async () => {
+        if (instruments.length === 0) {
+            Alert.alert('Atenção', 'Por favor, selecione pelo menos uma categoria.');
+            return;
+        }
+        try {
+            let questions = [];
+            if (instruments.includes('Gerais') && instruments.includes('Tecnicas')) {
+                const response = await axios.get('https://api.example.com/questions?category=all');
+                questions = response.data;
+            } else if (instruments.includes('Gerais')) {
+                const response = await axios.get('https://api.example.com/questions?category=general');
+                questions = response.data;
+            } else if (instruments.includes('Tecnicas')) {
+                const response = await axios.get('https://api.example.com/questions?category=technical');
+                questions = response.data;
+            }
+
+            navigation.navigate('Quiz', { questions });
+        } catch (error) {
+            console.error('Failed to load questions:', error);
+        }
     };
 
     return (
@@ -62,9 +82,9 @@ export default function Acesso() {
                     />
                 </View>
                 <View style={styles.body}>
-                    <Pressable style={styles.playButton} onPress={handleStartQuiz}>
+                    <TouchableOpacity style={styles.playButton} onPress={handleStartQuiz}>
                         <Text style={styles.buttonText}>PLAY</Text>
-                    </Pressable>
+                    </TouchableOpacity>
                 </View>
             </View>
         </LinearGradient>
