@@ -31,7 +31,7 @@ export default function Usuario() {
                 >
                     <View style={styles.overlayContainer}>
                         <View style={styles.topo}>
-                            <Text style={styles.topoTitle}>Enade</Text>
+                            <Text style={styles.topoTitle}>ENADE</Text>
                             <Text style={styles.subTitle}>SIMULADO - 2024</Text>
                         </View>
                         <View style={styles.innerContainer}>
