@@ -10,6 +10,7 @@ export default function Usuario() {
     const [selectedValue, setSelectedValue] = useState("");
     const navigation = useNavigation();
     const [aluno, setAluno] = useState({ width: '1%', height: '1%' });
+       //validação dos campos
     const handlePress = () => {
         if (!username || !selectedValue) {
             Alert.alert("Erro", "Por favor, preencha todos os campos obrigatórios.");
@@ -20,28 +21,36 @@ export default function Usuario() {
     };
 
     return (
+        //ajusta a tela quando o teclado é exbido
         <KeyboardAvoidingView
             style={{ flex: 1 }}
             behavior={Platform.OS === "ios" ? "padding" : "height"}
         >
-            <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+            
+            <ScrollView contentContainerStyle={{ flexGrow: 1 }}> 
+            
                 <LinearGradient
                     colors={['#00EFFF', '#00E0FF', '#174BAF']}
-                    style={styles.container}
-                >
+                    style={styles.container} //fundo degrade
+                > 
+                     
                     <View style={styles.overlayContainer}>
-                        <View style={styles.topo}>
+                        <View style={styles.topo}> 
                             <Text style={styles.topoTitle}>ENADE</Text>
-                            <Text style={styles.subTitle}>SIMULADO - 2024</Text>
-                        </View>
+                            <Text style={styles.subTitle}>SIMULADO - 2024</Text> 
+                        </View> 
+
+                         
                         <View style={styles.innerContainer}>
+                            
                             <Text style={styles.label}>Usuário:</Text>
-                            <TextInput
+                            <TextInput //entrada de texto para o nome úsuario
                                 style={[styles.input, { textAlign: 'center' }]}
                                 placeholder="ex: Lívia Maria"
                                 value={username}
                                 onChangeText={setUsername}
-                            />
+                            /> 
+
                             <Text style={styles.label}>Qual é o Curso?</Text>
                             <View style={styles.pickerContainer}>
                                 <Picker
@@ -68,7 +77,7 @@ export default function Usuario() {
                                 </Picker>
                             </View>
                             
-                            <TouchableOpacity
+                            <TouchableOpacity //botao que aciona o handlepress
                                 style={styles.button}
                                 onPress={handlePress}
                             >
